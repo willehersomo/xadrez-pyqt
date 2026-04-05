@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>759</width>
+    <height>762</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tabuleiro</string>
+  </property>
+  <property name="styleSheet">
+   <string>
+QWidget#centralwidget { background-color: #2b2b2b; }
+QPushButton { border: none; }
+/* Casas Claras */
+QPushButton#btn_A8, QPushButton#btn_C8, QPushButton#btn_E8, QPushButton#btn_G8,
+QPushButton#btn_B7, QPushButton#btn_D7, QPushButton#btn_F7, QPushButton#btn_H7,
+QPushButton#btn_A6, QPushButton#btn_C6, QPushButton#btn_E6, QPushButton#btn_G6,
+QPushButton#btn_B5, QPushButton#btn_D5, QPushButton#btn_F5, QPushButton#btn_H5,
+QPushButton#btn_A4, QPushButton#btn_C4, QPushButton#btn_E4, QPushButton#btn_G4,
+QPushButton#btn_B3, QPushButton#btn_D3, QPushButton#btn_F3, QPushButton#btn_H3,
+QPushButton#btn_A2, QPushButton#btn_C2, QPushButton#btn_E2, QPushButton#btn_G2,
+QPushButton#btn_B1, QPushButton#btn_D1, QPushButton#btn_F1, QPushButton#btn_H1 { background-color: #F0D9B5; }
+/* Casas Escuras */
+QPushButton#btn_B8, QPushButton#btn_D8, QPushButton#btn_F8, QPushButton#btn_H8,
+QPushButton#btn_A7, QPushButton#btn_C7, QPushButton#btn_E7, QPushButton#btn_G7,
+QPushButton#btn_B6, QPushButton#btn_D6, QPushButton#btn_F6, QPushButton#btn_H6,
+QPushButton#btn_A5, QPushButton#btn_C5, QPushButton#btn_E5, QPushButton#btn_G5,
+QPushButton#btn_B4, QPushButton#btn_D4, QPushButton#btn_F4, QPushButton#btn_H4,
+QPushButton#btn_A3, QPushButton#btn_C3, QPushButton#btn_E3, QPushButton#btn_G3,
+QPushButton#btn_B2, QPushButton#btn_D2, QPushButton#btn_F2, QPushButton#btn_H2,
+QPushButton#btn_A1, QPushButton#btn_C1, QPushButton#btn_E1, QPushButton#btn_G1 { background-color: #B58863; }
+QPushButton#btn_Confirmar { background-color: #4CAF50; color: white; font-weight: bold; font-size: 14px; border-radius: 4px; }
+QPushButton#btn_Confirmar:hover { background-color: #45a049; }
+QLineEdit { background: transparent; color: #cccccc; border: none; font-size: 14px; font-weight: bold; }
+   </string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btn_A8"><property name="geometry"><rect><x>30</x><y>50</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_B8"><property name="geometry"><rect><x>100</x><y>50</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_C8"><property name="geometry"><rect><x>170</x><y>50</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_D8"><property name="geometry"><rect><x>240</x><y>50</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_E8"><property name="geometry"><rect><x>310</x><y>50</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_F8"><property name="geometry"><rect><x>380</x><y>50</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_G8"><property name="geometry"><rect><x>450</x><y>50</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_H8"><property name="geometry"><rect><x>520</x><y>50</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_A7"><property name="geometry"><rect><x>30</x><y>130</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_B7"><property name="geometry"><rect><x>100</x><y>130</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_C7"><property name="geometry"><rect><x>170</x><y>130</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_D7"><property name="geometry"><rect><x>240</x><y>130</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_E7"><property name="geometry"><rect><x>310</x><y>130</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_F7"><property name="geometry"><rect><x>380</x><y>130</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_G7"><property name="geometry"><rect><x>450</x><y>130</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_H7"><property name="geometry"><rect><x>520</x><y>130</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_A6"><property name="geometry"><rect><x>30</x><y>210</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_B6"><property name="geometry"><rect><x>100</x><y>210</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_C6"><property name="geometry"><rect><x>170</x><y>210</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_D6"><property name="geometry"><rect><x>240</x><y>210</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_E6"><property name="geometry"><rect><x>310</x><y>210</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_F6"><property name="geometry"><rect><x>380</x><y>210</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_G6"><property name="geometry"><rect><x>450</x><y>210</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_H6"><property name="geometry"><rect><x>520</x><y>210</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_A5"><property name="geometry"><rect><x>30</x><y>290</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_B5"><property name="geometry"><rect><x>100</x><y>290</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_C5"><property name="geometry"><rect><x>170</x><y>290</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_D5"><property name="geometry"><rect><x>240</x><y>290</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_E5"><property name="geometry"><rect><x>310</x><y>290</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_F5"><property name="geometry"><rect><x>380</x><y>290</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_G5"><property name="geometry"><rect><x>450</x><y>290</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_H5"><property name="geometry"><rect><x>520</x><y>290</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_A4"><property name="geometry"><rect><x>30</x><y>370</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_B4"><property name="geometry"><rect><x>100</x><y>370</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_C4"><property name="geometry"><rect><x>170</x><y>370</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_D4"><property name="geometry"><rect><x>240</x><y>370</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_E4"><property name="geometry"><rect><x>310</x><y>370</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_F4"><property name="geometry"><rect><x>380</x><y>370</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_G4"><property name="geometry"><rect><x>450</x><y>370</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_H4"><property name="geometry"><rect><x>520</x><y>370</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_A3"><property name="geometry"><rect><x>30</x><y>450</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_B3"><property name="geometry"><rect><x>100</x><y>450</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_C3"><property name="geometry"><rect><x>170</x><y>450</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_D3"><property name="geometry"><rect><x>240</x><y>450</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_E3"><property name="geometry"><rect><x>310</x><y>450</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_F3"><property name="geometry"><rect><x>380</x><y>450</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_G3"><property name="geometry"><rect><x>450</x><y>450</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_H3"><property name="geometry"><rect><x>520</x><y>450</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_A2"><property name="geometry"><rect><x>30</x><y>530</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_B2"><property name="geometry"><rect><x>100</x><y>530</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_C2"><property name="geometry"><rect><x>170</x><y>530</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_D2"><property name="geometry"><rect><x>240</x><y>530</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_E2"><property name="geometry"><rect><x>310</x><y>530</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_F2"><property name="geometry"><rect><x>380</x><y>530</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_G2"><property name="geometry"><rect><x>450</x><y>530</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_H2"><property name="geometry"><rect><x>520</x><y>530</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_A1"><property name="geometry"><rect><x>30</x><y>610</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_B1"><property name="geometry"><rect><x>100</x><y>610</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_C1"><property name="geometry"><rect><x>170</x><y>610</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_D1"><property name="geometry"><rect><x>240</x><y>610</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_E1"><property name="geometry"><rect><x>310</x><y>610</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_F1"><property name="geometry"><rect><x>380</x><y>610</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_G1"><property name="geometry"><rect><x>450</x><y>610</y><width>71</width><height>81</height></rect></property></widget>
+   <widget class="QPushButton" name="btn_H1"><property name="geometry"><rect><x>520</x><y>610</y><width>71</width><height>81</height></rect></property></widget>
+
+   <widget class="QLineEdit" name="label_A"><property name="geometry"><rect><x>30</x><y>690</y><width>71</width><height>25</height></rect></property><property name="text"><string>A</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget>
+   <widget class="QLineEdit" name="label_B"><property name="geometry"><rect><x>100</x><y>690</y><width>71</width><height>25</height></rect></property><property name="text"><string>B</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget>
+   <widget class="QLineEdit" name="label_C"><property name="geometry"><rect><x>170</x><y>690</y><width>71</width><height>25</height></rect></property><property name="text"><string>C</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget>
+   <widget class="QLineEdit" name="label_D"><property name="geometry"><rect><x>240</x><y>690</y><width>71</width><height>25</height></rect></property><property name="text"><string>D</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget>
+   <widget class="QLineEdit" name="label_E"><property name="geometry"><rect><x>310</x><y>690</y><width>71</width><height>25</height></rect></property><property name="text"><string>E</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget>
+   <widget class="QLineEdit" name="label_F"><property name="geometry"><rect><x>380</x><y>690</y><width>71</width><height>25</height></rect></property><property name="text"><string>F</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget>
+   <widget class="QLineEdit" name="label_G"><property name="geometry"><rect><x>450</x><y>690</y><width>71</width><height>25</height></rect></property><property name="text"><string>G</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget>
+   <widget class="QLineEdit" name="label_H"><property name="geometry"><rect><x>520</x><y>690</y><width>71</width><height>25</height></rect></property><property name="text"><string>H</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget>
+
+   <widget class="QLineEdit" name="label_8"><property name="geometry"><rect><x>0</x><y>50</y><width>31</width><height>81</height></rect></property><property name="text"><string>8</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget>
+   <widget class="QLineEdit" name="label_7"><property name="geometry"><rect><x>0</x><y>130</y><width>31</width><height>81</height></rect></property><property name="text"><string>7</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget>
+   <widget class="QLineEdit" name="label_6"><property name="geometry"><rect><x>0</x><y>210</y><width>31</width><height>81</height></rect></property><property name="text"><string>6</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget>
+   <widget class="QLineEdit" name="label_5"><property name="geometry"><rect><x>0</x><y>290</y><width>31</width><height>81</height></rect></property><property name="text"><string>5</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget>
+   <widget class="QLineEdit" name="label_4"><property name="geometry"><rect><x>0</x><y>370</y><width>31</width><height>81</height></rect></property><property name="text"><string>4</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget>
+   <widget class="QLineEdit" name="label_3"><property name="geometry"><rect><x>0</x><y>450</y><width>31</width><height>81</height></rect></property><property name="text"><string>3</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget>
+   <widget class="QLineEdit" name="label_2"><property name="geometry"><rect><x>0</x><y>530</y><width>31</width><height>81</height></rect></property><property name="text"><string>2</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget>
+   <widget class="QLineEdit" name="label_1"><property name="geometry"><rect><x>0</x><y>610</y><width>31</width><height>81</height></rect></property><property name="text"><string>1</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget>
+
+   <widget class="QPushButton" name="btn_Confirmar">
+    <property name="geometry"><rect><x>630</x><y>50</y><width>91</width><height>81</height></rect></property>
+    <property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property>
+    <property name="text"><string>Desistir</string></property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry"><rect><x>630</x><y>160</y><width>91</width><height>541</height></rect></property>
+    <property name="styleSheet"><string>background-color: #3b3b3b; border: 1px solid #555555;</string></property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar"><property name="geometry"><rect><x>0</x><y>0</y><width>759</width><height>22</height></rect></property></widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

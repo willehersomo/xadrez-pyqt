@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>250</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Xadrez - Menu Inicial</string>
+  </property>
+  <property name="styleSheet">
+   <string>QWidget { background-color: #2b2b2b; color: white; font-size: 14px; }</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>20</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="label_id">
+     <property name="text">
+      <string>ID da Partida:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="input_id">
+     <property name="styleSheet">
+      <string>background-color: #3b3b3b; border: 1px solid #555; padding: 4px;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_nome">
+     <property name="text">
+      <string>Seu Nome:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="input_nome">
+     <property name="styleSheet">
+      <string>background-color: #3b3b3b; border: 1px solid #555; padding: 4px;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_cor">
+     <property name="text">
+      <string>Escolha sua cor:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="combo_cor">
+     <property name="styleSheet">
+      <string>background-color: #3b3b3b; border: 1px solid #555; padding: 4px;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Brancas</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Pretas</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>10</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btn_entrar">
+     <property name="styleSheet">
+      <string>background-color: #4CAF50; color: white; font-weight: bold; padding: 8px; border-radius: 4px;</string>
+     </property>
+     <property name="text">
+      <string>Entrar na Partida</string>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
