@@ -17,6 +17,7 @@ class Partida(Base):
 
 
 URL_BASE_DADOS = 'mysql+pymysql://avnadmin:AVNS_E3bxwaNSVrU_t8UwOQU@xadrez-pyqt-xadrez-pyqt.g.aivencloud.com:22586/defaultdb'
+#se for testar, avisa pra eu ligar o servidor
 
 engine = create_engine(URL_BASE_DADOS, connect_args={'ssl': {}})
 

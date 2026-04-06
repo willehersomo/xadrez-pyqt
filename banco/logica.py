@@ -155,24 +155,21 @@ class JogoDeXadrez:
                 if peca != '--':
                     cor_peca = 'brancas' if peca.isupper() else 'pretas'
                     if cor_peca == cor:
-                        # Tenta mover essa peça para todos os lugares possíveis
                         for l_dest in range(8):
                             for c_dest in range(8):
                                 if self.validar_movimento_matematico((l_orig, c_orig), (l_dest, c_dest)):
-                                    # Simula o movimento
                                     fen_backup = self.matriz_para_fen()
                                     ep_backup = self.en_passant_alvo
 
                                     self.aplicar_movimento_bruto((l_orig, c_orig), (l_dest, c_dest))
                                     xeque_ainda = self.esta_em_xeque(cor)
 
-                                    # Desfaz a simulação
                                     self.fen_para_matriz(fen_backup)
                                     self.en_passant_alvo = ep_backup
 
                                     if not xeque_ainda:
-                                        return False  # Achou uma rota de fuga!
-        return True  # Nenhuma fuga encontrada
+                                        return False
+        return True
 
     def fazer_movimento(self, origem, destino):
         if self.status_jogo != "ativo":
@@ -182,14 +179,12 @@ class JogoDeXadrez:
         l_dest, c_dest = destino
         peca = self.tabuleiro[l_orig][c_orig]
 
-        #A peça sabe fazer esse movimento?
         if not self.validar_movimento_matematico(origem, destino):
             return False
 
         fen_backup = self.matriz_para_fen()
         ep_backup = self.en_passant_alvo
 
-        # Aplica o movimento
         self.aplicar_movimento_bruto(origem, destino)
 
         if self.esta_em_xeque(self.turno_atual):
